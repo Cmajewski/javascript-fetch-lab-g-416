@@ -12,6 +12,9 @@ function showResults(json) {
 
 function forkRepo() {
   const repo = 'learn-co-curriculum/javascript-fetch-lab'
+  fetch(repo)
+  .then(results=>results.json())
+  .then(json=>console.log(json))
   //use fetch to fork it!
 }
 
